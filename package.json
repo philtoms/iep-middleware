@@ -1,0 +1,28 @@
+{
+  "name": "iep-middleware",
+  "version": "1.0.0",
+  "description": "A utility to load and bind configurable plugins into express middleware",
+  "main": "index.mjs",
+  "author": "Phil Toms phil.toms@hotmail.co.uk",
+  "license": "MIT",
+  "keywords": [
+    "express",
+    "middleware",
+    "error-handler"
+  ],
+  "scripts": {
+    "test": "node --loader esm-fake-loader --experimental-specifier-resolution=node ./node_modules/.bin/ava --verbose"
+  },
+  "devDependencies": {
+    "ava": "^3.8.2",
+    "esm-fake-loader": "^1.2.5"
+  },
+  "ava": {
+    "nodeArguments": [
+      "--no-warnings"
+    ],
+    "files": [
+      "**/*.test.mjs"
+    ]
+  }
+}
