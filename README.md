@@ -151,7 +151,7 @@ In such a pipeline, plugin m/w is not responsible for directly responding to req
 
 The `next({payload:123})` route is accessed by the next m/w as `request.ctx`. The `ctx` property name can be configured during middleware setup:
 
-### happy path / sad path
+### Happy path routing
 
 ```javascript
 const { bind } = mw({ ctx: 'count' });
